@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>African Enumerative Combinatorics Community</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2b3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #44576c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    footer {
+      background-color: #2b3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>African Enumerative Combinatorics Community</h1>
+  <p>Connecting African researchers through seminars, collaboration, and discovery</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#seminars">Seminars</a>
+  <a href="#events">Events</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>African Enumerative Combinatorics Community (AECC) is a collaborative initiative to bring together mathematicians, both students and researchers, across Africa with a shared interest 
+    in counting problems, generating functions, and discrete structures.</p>
+  </section>
+
+  <section id="seminars">
+    <h2>Upcoming Seminars</h2>
+    <p>Seminars take place on the last Thursday of the month, at 14:00 East Africa Time.</p>
+    <ul>
+      <li><strong>May 29, 2025:</strong> Title – Dr. Yvonne Kariuki</li>
+      <li><strong>June 12, 2025:</strong> Title – Dr. Olivia Nabawanda</li>
+      <li><strong>July 8, 2025:</strong> TBC</li>
+    </ul>
+  </section>
+
+  <section id="events">
+    <h2>Collaborative Events</h2>
+    <p>We plan to host online problem-solving sessions and collaborative events, more details to follow.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:african.enum.comb@gmail.com">african.enum.comb@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 African Enumerative Combinatorics Community | Empowering Mathematical Collaboration</p>
+</footer>
+
+</body>
+</html>
