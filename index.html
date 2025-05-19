@@ -40,6 +40,64 @@
       padding: 10px;
       margin-top: 40px;
     }
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .committee-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .member-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+        }
+
+        .member-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .member-details {
+            margin-top: 15px;
+        }
+
+        .member-details h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .member-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .member-details a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+
+        .member-details a:hover {
+            text-decoration: underline;
+        }
   </style>
 </head>
 <body>
@@ -54,6 +112,8 @@
   <a href="#seminars">Seminars</a>
   <a href="#events">Events</a>
   <a href="#contact">Contact</a>
+  <a href="#resources">Resources</a>
+  <a href="#committee">Committee</a>
 </nav>
 
 <main>
@@ -67,7 +127,7 @@
     <h2>Upcoming Seminars</h2>
     <p>Seminars take place on the last Thursday of the month, at 14:00 East Africa Time.</p>
     <ul>
-      <li><strong>May 29, 2025:</strong> Title – Yvonne Kariuki, Kibabii University, Kenya</li>
+      <li><strong>May 29, 2025:</strong> Enumeration of Weakly Increasing 2-Noncrossing Trees – Yvonne Kariuki, Kibabii University, Kenya</li>
       <li><strong>June 26, 2025:</strong> Title – Olivia Nabawanda, Makerere University, Uganda</li>
       <li><strong>July 31, 2025:</strong> TBC</li>
     </ul>
@@ -82,6 +142,108 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:african.enum.comb@gmail.com">african.enum.comb@gmail.com</a></p>
   </section>
+
+  
+  <section id="resources">
+    <h2>Resources</h2>
+    <p>Here are some useful links for people interested in Enumerative Combinatorics:</p>
+    <p>Related organisations and conferences:</p>
+    <ul>
+      <li><a href="http://africanwomeninmath.org/">African Women in Mathematics Asssociation (AWMA)</a></li>
+      <li><a href="https://nexteinstein.org/">African Institute for Mathematical Sciences (AIMS)</a></li>
+      <li><a href="https://www.mathunion.org/">International Mathematical Union (IMU)</a></li>
+      <li><a href="https://fpsac.org/">International conferences on Formal Power Series and Algebraic Combinatorics (FPSAC)</a></li>
+      <li><a href="https://ecajournal.haifa.ac.il/Conference/ICECA2025.html">International Conference on Enumerative Combinatorics and Applications - Virtual</a></li>
+      <li><a href="https://www.math.aau.at/AofA/">International Conference on Probabilistic, Combinatorial and Asymptotic Methods for the Analysis of Algorithms (AofA)</a></li>
+    </ul>
+    <p>Related online resources:</p>
+    <ul>
+      <li>The AofA Conference series has a good list of resources <a href="https://www.math.aau.at/AofA/resources/">here</a></li>      
+      <li><a href="https://webspace.maths.qmul.ac.uk/b.jackson/MTHM030/counting.pdf">Notes on Counting: An Introduction to Enumerative Combinatorics (Peter J. Cameron)</a></li>
+      <li><a href="https://math.sun.ac.za/swagner/Combinatorics.pdf">Combinatorics Lecture Notes (Stephan Wagner)</a></li>
+      <li>Enumerative Combinatorics Volume 1 (Richard P. Stanley)<a href="https://www.ms.uky.edu/~sohum/putnam/enu_comb_stanley.pdf">.</a></li>
+      <li>Enumerative Combinatorics Volume 2 (Richard P. Stanley)</li>
+      <li>Introduction to Enumerative Combinatorics (Miklos Bona)</li>
+    </ul>
+  </section>
+  
+  <section id="Committee">
+    <h2>Committee</h2>
+    <div class="committee-container">
+
+        <!-- Member 1 -->
+        <div class="member-card">
+            <div class="member-image">
+                <img src="https://via.placeholder.com/150" alt="Fufa">
+            </div>
+            <div class="member-details">
+                <h3>Fufa Beyene</h3>
+                <p>Institute: Addis Ababa University</p>
+                <p>Country: Ethiopia</p>
+                <p>Email: <a href="mailto:fufa.beyene@aau.edu.et">fufa.beyene@aau.edu.et</a></p>
+                <p>Website: <a href="https://www.johndoe.com" target="_blank">www.johndoe.com</a></p>
+            </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member-card">
+            <div class="member-image">
+                <img src="https://via.placeholder.com/150" alt="Member 2">
+            </div>
+            <div class="member-details">
+                <h3>Yvonne Kariuki</h3>
+                <p>Institute: Kibabii University</p>
+                <p>Country: Kenya</p>
+                <p>Email: <a href="mailto:ykariuki@kibu.ac.ke">ykariuki@kibu.ac.ke</a></p>
+                <p>Website: <a href="https://www.janesmith.org" target="_blank">www.janesmith.org</a></p>
+            </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="member-card">
+            <div class="member-image">
+                <img src="https://via.placeholder.com/150" alt="Olivia">
+            </div>
+            <div class="member-details">
+                <h3>Olivia Nabawanda</h3>
+                <p>Institute: Mbarara University of Science and Technology</p>
+                <p>Country: Uganda</p>
+                <p>Email: <a href="mailto:onabawanda@must.ac.ug">onabawanda@must.ac.ug</a></p>
+                <p>Website: <a href="https://www.researchgate.net/profile/Olivia-Nabawanda-2" target="_blank">ResearchGate</a></p>
+            </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="member-card">
+            <div class="member-image">
+                <img src="https://via.placeholder.com/150" alt="Naina">
+            </div>
+            <div class="member-details">
+                <h3>Dimbinaina Ralaivaosaona</h3>
+                <p>Institute: Stellenbosch University</p>
+                <p>Country: South Africa</p>
+                <p>Email: <a href="mailto:naina@sun.ac.za">naina@sun.ac.za</a></p>
+                <p>Website: <a href="https://math.sun.ac.za/ralaivaosaona/" target="_blank">https://math.sun.ac.za/ralaivaosaona/</a></p>
+            </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="member-card">
+            <div class="member-image">
+                <img src="https://via.placeholder.com/150" alt="Sarah">
+            </div>
+            <div class="member-details">
+                <h3>Sarah Selkirk</h3>
+                <p>Institute: University of Warwick</p>
+                <p>Country: United Kingdom</p>
+                <p>Email: <a href="mailto:sarah.selkirk@warwick.ac.uk">sarah.selkirk@warwick.ac.uk</a></p>
+                <p>Website: <a href="https://www.math.aau.at/selkirk/" target="_blank">https://www.math.aau.at/selkirk/</a></p>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
 </main>
 
 <footer>
