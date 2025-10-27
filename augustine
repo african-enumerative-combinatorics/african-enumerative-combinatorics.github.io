@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Augustine Munagi's Seminar - African Enumerative Combinatorics Community</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2b3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #44576c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    footer {
+      background-color: #2b3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+    .seminar-container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .back-link {
+      font-size: 16px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    h2, h3 {
+      color: #2b3e50;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>African Enumerative Combinatorics Community</h1>
+  <p>Connecting African researchers through seminars, collaboration, and discovery</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="#about">About</a>
+  <a href="#seminars">Seminars</a>
+  <a href="#events">Events</a>
+  <a href="#resources">Resources</a>
+  <a href="#committee">Committee</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section>
+    <div class="seminar-container">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <h2>Seminar: Conjugation of Coloured Compositions</h2>
+      <h3>Speaker: Augustine Munagi, University of the Witwatersrand, South Africa</h3>
+      <p><strong>Abstract:</strong> Compositions of numbers are partitions in which the orders of summands are taken into account, 
+and n-color compositions permit every summand m to appear in m different types or colours. In this talk, we consider a set of 
+n-color-type compositions that admits exhaustive conjugation of its members in the classical tradition of Percy Alexander 
+MacMahon (1854--1929). Previous attempts at conjugation of standard n-color compositions have yielded partial results at best. 
+We condition directly on compositions and devise a set of coloured compositions in which every part dominates its color size 
+while treating every maximal string of 1's as a single part under colour assignment. This leads to the definition of n-color 
+compositions of the second kind. As with ordinary compositions a conjugate may be found by the equivalent techniques of symbolic 
+algebra, zig-zag graph and line graph. We conclude with a derivation of the relevant enumeration formulas.
+      </p>
+
+      <p><strong>Keywords:</strong> Compositions, Conjugation, Enumeration Formulas</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 African Enumerative Combinatorics Community | Empowering Mathematical Collaboration</p>
+</footer>
+
+</body>
+</html>
