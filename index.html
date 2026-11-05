@@ -128,33 +128,82 @@
     <p>Sign up for our mailing list to be notified of talks <a href="https://forms.gle/CGtWjyBt4ErkQeTB7">here</a>.</p>
   </section>
   
+<section id="attend">
+  <h2>How to Attend</h2>
+  <p>
+    Seminars take place on the last Thursday of each month at
+    <strong>14:00 EAT</strong> (UTC+3), which is <strong>11:00 UTC</strong>.
+  </p>
+  <p id="next-seminar"></p>
+  <p class="attend-buttons">
+    <a class="attend-btn" href="ZOOM_REGISTRATION_LINK" target="_blank" rel="noopener">Register on Zoom</a>
+    <a class="attend-btn" target="_blank" rel="noopener"
+       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=AECC%20Monthly%20Seminar&dates=20261126T110000Z%2F20261126T120000Z&details=African%20Enumerative%20Combinatorics%20Community%20monthly%20seminar.%20Details%3A%20https%3A%2F%2Fafrican-enumerative-combinatorics.github.io%2F&location=Zoom&recur=RRULE%3AFREQ%3DMONTHLY%3BBYDAY%3D-1TH">Add to Google Calendar</a>
+    <a class="attend-btn" href="aecc-seminars.ics" download>Download .ics (Apple/Outlook)</a>
+  </p>
+</section>
+
+<style>
+  .attend-buttons { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .attend-btn {
+    display: inline-block; padding: 0.55rem 1rem; border-radius: 6px;
+    background: #1a5f7a; color: #fff; text-decoration: none; font-weight: 600;
+  }
+  .attend-btn:hover { background: #134659; }
+</style>
+
+<script>
+  // Shows the next "last Thursday, 11:00 UTC" seminar in the visitor's local time
+  function lastThursdayUTC(year, month) {
+    const d = new Date(Date.UTC(year, month + 1, 0)); // last day of the month
+    d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() - 4 + 7) % 7));
+    d.setUTCHours(11, 0, 0, 0);
+    return d;
+  }
+  (function () {
+    const now = new Date();
+    let d = lastThursdayUTC(now.getUTCFullYear(), now.getUTCMonth());
+    if (d.getTime() + 2 * 3600 * 1000 < now.getTime()) {
+      d = lastThursdayUTC(now.getUTCFullYear(), now.getUTCMonth() + 1);
+    }
+    const local = d.toLocaleString(undefined, {
+      weekday: "long", day: "numeric", month: "long", year: "numeric",
+      hour: "2-digit", minute: "2-digit", timeZoneName: "short"
+    });
+    document.getElementById("next-seminar").innerHTML =
+      "Next seminar in your local time: <strong>" + local + "</strong>";
+  })();
+</script>
+
+  
   <section id="seminars">
     <h2>Upcoming Seminars</h2>
-    <p>Seminars take place on the last Thursday of the month, at 14:00 East Africa Time.</p>
+    //<p>Seminars take place on the last Thursday of the month, at 14:00 East Africa Time.</p>
     <ul>
-      <li><strong>24 September 2026:</strong><a href="Albert.html">Marked Noncrossing Trees </a> – Albert Nyariaro Oloo, Moi University, Kenya.</li>
-      <li><strong>29 October 2026:</strong> TBC </a> – Clement Requile, UPC- BarcelonaTech, Spain.</li>
+      <li><strong>26 November 2026:</strong> TBC </a> – Ihechukwu, , South Africa.</li>
+      <li><strong>25 February 2027:</strong> TBC </a> – Clement Requile, UPC- BarcelonaTech, Spain.</li>
 
     </ul>
 
     <h2>Previous Seminars</h2>
     <ul>
-      <li><strong>3 July 2025:</strong> <a href="yvonne.html">Enumeration of Weakly Increasing 2-Noncrossing Trees</a> – Yvonne Kariuki, Kibabii University, Kenya. <a href="https://www.youtube.com/watch?v=sY6-Jvy4Y7c">YouTube</a>.</li>
-      <li><strong>31 July 2025:</strong> <a href="olivia.html">Run-Sorted Permutations Avoiding Certain Patterns: The Case of Length 4 and Permutation Statistical Consequences</a> – Olivia Nabawanda, Mbarara University of Science and Technology, Uganda. <a href="https://youtu.be/BTqFquc9W2A">YouTube</a></li>
-      <li><strong>28 August 2025:</strong> <a href="fufa.html">Families of Type B Set Partitions Counted by the Dowling Numbers</a> – Fufa Beyene, Kotebe University of Education, Ethiopia. <a href="https://www.youtube.com/watch?v=aFChWOHjj0M">YouTube</a></li>
-      <li><strong>25 September 2025:</strong> <a href="praise.html">Graphs of Reduced Words and Some Connections</a> – Praise Adeyemo, University of Ibadan, Nigeria. <a href="https://youtu.be/0zWRK9wfrNU">YouTube</a></li>
-      <li><strong>30 October 2025:</strong> <a href="dennis.html">The Asymptotic Analysis of Norms in Integer Partitions</a> – Dennis Kinoti Gikunda, Stellenbosch University, South Africa. <a href="https://www.youtube.com/watch?v=9gqcLuz2EUk">YouTube</a></li>
-      <li><strong>27 November 2025:</strong> <a href="augustine.html">Conjugation of Coloured Compositions</a> – Augustine Munagi, University of the Witwatersrand, South Africa. <a href="https://www.youtube.com/watch?v=iEnSyEr3sCY">YouTube</a></li>
-      <li><strong>29 January 2026:</strong> <a href="arnold.html">The water capacity of Dyck paths</a> – Arnold Knopfmacher, University of the Witwatersrand, South Africa. <a href="https://www.youtube.com/watch?v=6PmEtvg9G8k">YouTube</a></li>
-      <li><strong>26 February 2026:</strong> <a href="isaac.html">Generalized plane trees</a> – Isaac Owino Okoth, Maseno University, Kenya. <a href="https://www.youtube.com/watch?v=kRQbB5ObNkI&t=1162s">YouTube</a></li>
-      <li><strong>26 March 2026:</strong> <a href="naina.html">A probabilistic framework for the study of  parameters of random trees</a> – Dimbinaina Ralaivaosaona, Stellenbosch University, South Africa.<a href="https://www.youtube.com/watch?v=d9JB5G2kJAE">YouTube</a></li>
-      <li><strong>30 April 2026:</strong> <a href="stephan.html">Monomial identities in the Weyl algebra</a> – Stephan Wagner, Graz University of Technology, Austria. <a href="https://www.youtube.com/watch?v=fvmkCATmJx0&t=50s">YouTube</a></li>
-      <li><strong>28 May 2026:</strong> <a href="Hans.html">Pattern avoidance in alternating sign rectangles</a> – Hans Hoengesberg, University of Vienna, Austria. <a href="https://www.youtube.com/watch?v=tgpMigSz6tU">YouTube</a></li>
+      <li><strong>24 September 2026:</strong><a href="Albert.html">Marked Noncrossing Trees </a> – Albert Nyariaro Oloo, Moi University, Kenya.<a href="https://www.youtube.com/watch?v=BtAmvZCdEKg&t=52s">YouTube</a></li>
+      <li><strong>27 August 2026:</strong> <a href="ilse.html">The Art of Bijections: Alternating Sign Matrices and Littlewood Identities </a> – Ilse Fischer, University of Vienna, Austria.<a href="https://www.youtube.com/watch?v=H8asrWngj3o">YouTube</a></li>
+      <li><strong>30 July 2026:</strong>  <a href="fidel.html">On a variant of k-plane trees</a> – Fidel Ochieng, Moi University, Kenya. <a href="https://www.youtube.com/watch?v=s7n94PZa9qY">YouTube</a></li>
       <li><strong>25 June 2026:</strong> <a href="jan.html">Weight distribution bounds to relate minimum distance,
 list decoding, and symmetric channel performance</a> – Jan Hazla, Research Chair, AIMS Rwanda, Kigali.<a href="https://www.youtube.com/watch?v=vJbQpjfC_U4">YouTube</a></li>
-      <li><strong>30 July 2026:</strong>  <a href="fidel.html">On a variant of k-plane trees</a> – Fidel Ochieng, Moi University, Kenya. <a href="https://www.youtube.com/watch?v=s7n94PZa9qY">YouTube</a></li>
-      <li><strong>27 August 2026:</strong> <a href="ilse.html">The Art of Bijections: Alternating Sign Matrices and Littlewood Identities </a> – Ilse Fischer, University of Vienna, Austria.<a href="https://www.youtube.com/watch?v=H8asrWngj3o">YouTube</a></li>
-
+      <li><strong>28 May 2026:</strong> <a href="Hans.html">Pattern avoidance in alternating sign rectangles</a> – Hans Hoengesberg, University of Vienna, Austria. <a href="https://www.youtube.com/watch?v=tgpMigSz6tU">YouTube</a></li>
+      <li><strong>30 April 2026:</strong> <a href="stephan.html">Monomial identities in the Weyl algebra</a> – Stephan Wagner, Graz University of Technology, Austria. <a href="https://www.youtube.com/watch?v=fvmkCATmJx0&t=50s">YouTube</a></li>
+      <li><strong>26 March 2026:</strong> <a href="naina.html">A probabilistic framework for the study of  parameters of random trees</a> – Dimbinaina Ralaivaosaona, Stellenbosch University, South Africa.<a href="https://www.youtube.com/watch?v=d9JB5G2kJAE">YouTube</a></li>
+      <li><strong>26 February 2026:</strong> <a href="isaac.html">Generalized plane trees</a> – Isaac Owino Okoth, Maseno University, Kenya. <a href="https://www.youtube.com/watch?v=kRQbB5ObNkI&t=1162s">YouTube</a></li>
+      <li><strong>29 January 2026:</strong> <a href="arnold.html">The water capacity of Dyck paths</a> – Arnold Knopfmacher, University of the Witwatersrand, South Africa. <a href="https://www.youtube.com/watch?v=6PmEtvg9G8k">YouTube</a></li>
+      <li><strong>27 November 2025:</strong> <a href="augustine.html">Conjugation of Coloured Compositions</a> – Augustine Munagi, University of the Witwatersrand, South Africa. <a href="https://www.youtube.com/watch?v=iEnSyEr3sCY">YouTube</a></li>
+      <li><strong>30 October 2025:</strong> <a href="dennis.html">The Asymptotic Analysis of Norms in Integer Partitions</a> – Dennis Kinoti Gikunda, Stellenbosch University, South Africa. <a href="https://www.youtube.com/watch?v=9gqcLuz2EUk">YouTube</a></li>
+      <li><strong>25 September 2025:</strong> <a href="praise.html">Graphs of Reduced Words and Some Connections</a> – Praise Adeyemo, University of Ibadan, Nigeria. <a href="https://youtu.be/0zWRK9wfrNU">YouTube</a></li>
+      <li><strong>28 August 2025:</strong> <a href="fufa.html">Families of Type B Set Partitions Counted by the Dowling Numbers</a> – Fufa Beyene, Kotebe University of Education, Ethiopia. <a href="https://www.youtube.com/watch?v=aFChWOHjj0M">YouTube</a></li>
+      <li><strong>31 July 2025:</strong> <a href="olivia.html">Run-Sorted Permutations Avoiding Certain Patterns: The Case of Length 4 and Permutation Statistical Consequences</a> – Olivia Nabawanda, Mbarara University of Science and Technology, Uganda. <a href="https://youtu.be/BTqFquc9W2A">YouTube</a></li>
+      <li><strong>3 July 2025:</strong> <a href="yvonne.html">Enumeration of Weakly Increasing 2-Noncrossing Trees</a> – Yvonne Kariuki, Kibabii University, Kenya. <a href="https://www.youtube.com/watch?v=sY6-Jvy4Y7c">YouTube</a>.</li>
+                                                                        
      
 
     </ul>
